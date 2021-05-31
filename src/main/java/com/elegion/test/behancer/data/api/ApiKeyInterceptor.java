@@ -1,6 +1,6 @@
 package com.elegion.test.behancer.data.api;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.elegion.test.behancer.BuildConfig;
 

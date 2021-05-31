@@ -1,6 +1,6 @@
 package com.elegion.test.behancer.data;
 
-import android.support.v4.util.Pair;
+import androidx.core.util.Pair;
 
 import com.elegion.test.behancer.data.database.BehanceDao;
 import com.elegion.test.behancer.data.model.project.Cover;

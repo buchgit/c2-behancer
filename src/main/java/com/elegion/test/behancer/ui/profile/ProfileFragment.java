@@ -2,14 +2,16 @@ package com.elegion.test.behancer.ui.profile;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.elegion.test.behancer.R;
 import com.elegion.test.behancer.common.RefreshOwner;
@@ -122,14 +124,26 @@ public class ProfileFragment extends Fragment implements Refreshable {
     }
 
     private void bind(User user) {
-        Picasso.with(getContext())
-                .load(user.getImage().getPhotoUrl())
-                .fit()
-                .into(mProfileImage);
-        mProfileName.setText(user.getDisplayName());
-        mProfileCreatedOn.setText(DateUtils.format(user.getCreatedOn()));
-        mProfileLocation.setText(user.getLocation());
+//        Picasso.with(getContext())
+//                .load(user.getImage().getPhotoUrl())
+//                .fit()
+//                .into(mProfileImage);
+//        mProfileName.setText(user.getDisplayName());
+//        mProfileCreatedOn.setText(DateUtils.format(user.getCreatedOn()));
+//        mProfileLocation.setText(user.getLocation());
     }
+    /*
+    Picasso.Builder builder = new Picasso.Builder(this);
+    builder.listener(new Picasso.Listener()
+    {
+        @Override
+        public void onImageLoadFailed(Picasso picasso, Uri uri, Exception exception)
+        {
+            exception.printStackTrace();
+        }
+    });
+    builder.build().load("https://www.simplifiedcoding.net/wp-content/uploads/2015/10/advertise.png").into(imageView);
+     */
 
     @Override
     public void onDetach() {

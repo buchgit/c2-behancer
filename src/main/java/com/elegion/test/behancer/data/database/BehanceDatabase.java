@@ -1,7 +1,8 @@
 package com.elegion.test.behancer.data.database;
 
-import android.arch.persistence.room.Database;
-import android.arch.persistence.room.RoomDatabase;
+
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
 
 import com.elegion.test.behancer.data.model.project.Cover;
 import com.elegion.test.behancer.data.model.project.Owner;

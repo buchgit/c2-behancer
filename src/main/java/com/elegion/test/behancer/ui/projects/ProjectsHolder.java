@@ -1,9 +1,11 @@
 package com.elegion.test.behancer.ui.projects;
 
-import android.support.v7.widget.RecyclerView;
+
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.elegion.test.behancer.R;
 import com.elegion.test.behancer.data.model.project.Project;
@@ -32,20 +34,21 @@ public class ProjectsHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(Project item, ProjectsAdapter.OnItemClickListener onItemClickListener) {
-        Picasso.with(mImage.getContext()).load(item.getCover().getPhotoUrl())
-                .fit()
-                .into(mImage);
-
-        mName.setText(item.getName());
-        mUsername.setText(item.getOwners().get(FIRST_OWNER_INDEX).getUsername());
-        mPublishedOn.setText(DateUtils.format(item.getPublishedOn()));
-
-        if (onItemClickListener != null) {
-            itemView.setOnClickListener(v -> onItemClickListener.onItemClick(
-                    item.getOwners()
-                            .get(FIRST_OWNER_INDEX)
-                            .getUsername()
-            ));
-        }
+        //TODO
+//        Picasso.with(mImage.getContext()).load(item.getCover().getPhotoUrl())
+//                .fit()
+//                .into(mImage);
+//
+//        mName.setText(item.getName());
+//        mUsername.setText(item.getOwners().get(FIRST_OWNER_INDEX).getUsername());
+//        mPublishedOn.setText(DateUtils.format(item.getPublishedOn()));
+//
+//        if (onItemClickListener != null) {
+//            itemView.setOnClickListener(v -> onItemClickListener.onItemClick(
+//                    item.getOwners()
+//                            .get(FIRST_OWNER_INDEX)
+//                            .getUsername()
+//            ));
+//        }
     }
 }
